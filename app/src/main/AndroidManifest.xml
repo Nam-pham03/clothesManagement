@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-feature android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- Yêu cầu quyền POST_NOTIFICATIONS (Android 13 trở lên) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_PRM"
+        tools:targetApi="35">
+
+        <activity
+            android:name=".Activity.User.LiveStream.LiveActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.ZaloPay.PaymentNotification"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.ZaloPay.OrderPayment"
+            android:exported="true"
+            android:label="Merchant Demo"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.User.ChatBot.ChatbotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.VirtualRoom.VirtualRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Chat.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Chat.ConversationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Shop.OrderHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Shop.DetailProductShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.Shop.ProductListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Cart.CartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Profile.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.Profile.PasswordChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.Profile.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.Profile.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.Statistic.StatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Order.OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Order.ManageOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.Account.DetailAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Role.ManageRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Account.AddAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Account.EditAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Account.ManageAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.Category.ManageCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Product.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Product.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Product.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.Product.ManageProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Màu chính -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="colorPrimary">#3F51B5</color> <!-- Indigo -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker Indigo -->
+    <color name="colorPrimaryLight">#9FA8DA</color> <!-- Lighter Indigo -->
+    <color name="colorAccent">#FF4081</color> <!-- Pink -->
+
+    <!-- Màu nền -->
+    <color name="backgroundLight">#F8F9FA</color> <!-- Màu nền sáng -->
+    <color name="backgroundDark">#121212</color> <!-- Màu nền tối -->
+
+    <!-- Màu chữ -->
+    <color name="textPrimary">#212121</color> <!-- Màu chữ chính -->
+    <color name="textSecondary">#757575</color> <!-- Màu chữ phụ -->
+    <color name="textHint">#9E9E9E</color> <!-- Màu gợi ý -->
+
+    <!-- Màu cho Button -->
+    <color name="buttonPrimary">#3F51B5</color> <!-- Màu nút chính -->
+    <color name="buttonSecondary">#FF4081</color> <!-- Màu nút phụ -->
+    <color name="buttonDisabled">#BDBDBD</color> <!-- Màu nút bị vô hiệu -->
+
+    <!-- Màu viền và phân tách -->
+    <color name="dividerColor">#E0E0E0</color> <!-- Màu đường chia -->
+    <color name="borderColor">#BDBDBD</color> <!-- Màu viền -->
+
+    <!-- Màu trạng thái -->
+    <color name="green">#4CAF50</color> <!-- Màu thành công -->
+    <color name="warning">#FF9800</color> <!-- Màu cảnh báo -->
+    <color name="red">#F44336</color> <!-- Màu lỗi -->
+    <color name="blue">#2196F3</color> <!-- Màu thông tin -->
+
+</resources>

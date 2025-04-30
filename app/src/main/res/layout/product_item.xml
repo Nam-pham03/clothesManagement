@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center_horizontal">
+
+        <!-- Dùng FrameLayout để đặt ảnh sản phẩm và tem giảm giá -->
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Ảnh sản phẩm -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_avatar"/>
+
+            <!-- Tem giảm giá (Căn góc trên bên trái) -->
+
+
+        </FrameLayout>
+
+
+        <!-- Tên sản phẩm -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Nhãn hàng -->
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhãn hàng"
+            android:textSize="16sp"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+        <!-- Giá gốc (bị gạch ngang nếu có giảm giá) -->
+        <TextView
+            android:id="@+id/tvOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Giá sau giảm -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá sau giảm"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Giá gốc (bị gạch ngang nếu có giảm giá) -->
+
+
+        <!-- Số lượng -->
+        <TextView
+            android:id="@+id/tvStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:id="@+id/tvStockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hết hàng"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Nút Thêm vào giỏ hàng -->
+        <!-- Layout chứa Nút "Thêm vào giỏ hàng" và Tem giảm giá -->
+        <!-- Layout chứa Nút "Thêm vào giỏ hàng" và Tem giảm giá -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <!-- Nút Thêm vào giỏ hàng (Căn giữa) -->
+            <ImageButton
+                android:id="@+id/btnAddToCart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Add Cart"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cart_add" />
+
+            <!-- Tem giảm giá (Căn góc dưới bên phải) -->
+            <TextView
+                android:id="@+id/tvDiscountTag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_tag"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                android:visibility="visible"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

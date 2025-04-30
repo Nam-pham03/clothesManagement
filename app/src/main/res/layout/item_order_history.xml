@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:stretchColumns="1"
+        android:shrinkColumns="1">
+
+
+        <TableRow>
+            <TextView    android:text="User" style="@style/TableHeader"/>
+            <TextView    android:id="@+id/tvUserName" android:text="John Doe" style="@style/TableCell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Total Price" style="@style/TableHeader"/>
+            <TextView    android:id="@+id/tvTotalPrice" android:text="$250.00" style="@style/TableCell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Status" style="@style/TableHeader"/>
+            <TextView       android:id="@+id/tvStatus" android:text="Delivered" style="@style/TableCell"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Create Date: " style="@style/TableHeader"/>
+            <TextView       android:id="@+id/tvCreateDate" android:text="Delivered" style="@style/TableCell"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.cardview.widget.CardView>

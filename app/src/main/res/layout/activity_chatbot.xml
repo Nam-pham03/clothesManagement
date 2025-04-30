@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_primary_dark">
+
+    <!-- Chatbot Panel -->
+    <LinearLayout
+        android:id="@+id/chatbotPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:gravity="start|top"
+        android:orientation="vertical">
+
+        <!-- Header for Chatbot -->
+        <TextView
+            android:id="@+id/chatbotHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chatbot"
+            android:textSize="22sp"
+            android:textColor="#FF4081"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:paddingEnd="8dp"/>
+
+        <!-- Chat messages will be shown here -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatbox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- User input and Send Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <!-- User input EditText -->
+            <EditText
+                android:id="@+id/chatInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="top|start"
+                android:hint="Type a message..."
+                android:inputType="text"
+                android:maxLines="3"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <!-- Send Button -->
+            <Button
+                android:id="@+id/sendChatBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4081"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

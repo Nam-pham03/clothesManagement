@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Project_PRM</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_app_title">Demo App</string>
+    <string name="import_camera">Import Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="share">Share</string>
+    <string name="communicate">Communicate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="chose_send">Select Send</string>
+    <string name="chose_gallery">Choose gallery</string>
+    <string name="chose_slideshow">Choose </string>
+    <string name="chose_share">Choose share</string>
+    <string name="chose_camera">Choose camera</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create account</string>
+    <string name="online_clothes">Online Clothes</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="input_your_information">Input your information</string>
+    <string name="phone_number">Phone number</string>
+    <string name="send">Send</string>
+    <string name="show_password">Show password</string>
+    <string name="confirm_password">Confirm password*</string>
+    <string name="change_password">Change password</string>
+    <string name="back">Back</string>
+    <string name="old_password">Old password*</string>
+    <string name="new_password">New password*</string>
+    <string name="save">Save</string>
+    <string name="reset_password">Reset Password\n</string>
+    <string name="create_new_password">Create New Password\n</string>
+    <string name="view_profile">View Profile</string>
+    <string name="logout">Logout</string>
+    <string name="open_products">Open Products</string>
+    <string name="login_with_google">Login with Google</string>
+    <string-array name="categories">
+        <item>Upper body</item>
+        <item>Lower body</item>
+        <item>Dress</item>
+    </string-array>
+</resources>
